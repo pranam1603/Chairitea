@@ -39,8 +39,8 @@ ul {
     padding: 10px;
 }
 
-.footer-col h4 {
-    font-size: 18px;
+.footer-col h2 {
+    font-size: 20px;
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
@@ -48,16 +48,18 @@ ul {
     position: relative;
 }
 
-.footer-col h4::before {
+
+/* .footer-col h4::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 20;
+    right: 30;
     bottom: -10px;
     background-color: #e91e63;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
-}
+    width: 70px;
+} */
 
 .footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
@@ -80,11 +82,11 @@ ul {
 }
 
 .column {
-    float: right;
+    float: center;
 }
 
 .col {
-    float: left;
+    float: center;
     text-align: center;
 }
 
@@ -99,7 +101,7 @@ ul {
     padding-left: 8px;
 }
 
-.column .social-links a {
+.social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -112,7 +114,7 @@ ul {
     transition: all 0.5s ease;
 }
 
-.column .social-links a:hover {
+.social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
 }
