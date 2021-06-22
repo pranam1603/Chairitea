@@ -1,0 +1,334 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,700&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;600;800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f7b90013;
+}
+
+.container{
+    margin-bottom: 100px;
+}
+
+img{
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height:120px;
+    width:40%;
+    animation-name: imageAni;
+    animation-duration: 2s;
+  }
+  
+  div [class^="col-"]{
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+  }
+  .card{
+      background:transparent ;
+    transition:0.5s;
+    cursor:pointer;
+    padding: 10px 0px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  .card-title i{  
+    font-size:30px;
+    transition:1s;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+    color:#f78c00;
+    font-weight: 800;
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#f57200;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    background: #f7b90041;
+  }
+  .card-text{
+    height:80px;  
+ 
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, .5);
+    transition: transform .3s ease-out 0s;
+    /* background: rgba(255, 255, 255, 0.1); */
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+.contact_text{
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Marck Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  padding-bottom:50px;
+}  
+
+
+.contact_text h1{
+  font-family: 'Marck Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #482611;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.contact_text p{
+  font-size: 23px;
+  padding: 10px 70px;
+}
+
+.card h5{
+  line-height: 25px;
+  font-family: 'Marck Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.contact-section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.contact_info{
+    /* text-align: center; */
+    width: 50%;
+}
+
+.contact_form input{
+    width: 85%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #482611;
+    margin-bottom: 35px;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    background: transparent;
+}
+
+.contact_form{
+    padding-top:30px ;
+}
+
+.contact_form textarea{
+    width: 85%;
+    height: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #482611;
+    margin-bottom: 35px;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #f7bb00;
+    background: transparent;
+
+}
+
+.contact_form textarea::placeholder{
+    padding-left: 5px;
+    color: black; 
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f7bb00;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.contact_form input::placeholder{
+    padding-left: 5px;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f7bb00;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#status{
+  width: 85%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 40px;
+  /* height: 30px; */
+}
+
+.contact_form .contact_form_btn{
+    text-decoration: none;
+    padding: 0.4rem 1.3rem;
+    background: #f7bb00;
+    outline: 0.2rem solid #f7bb00;
+    color: #482611;
+    font-weight: bold;
+    outline-offset: 4px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.4s linear;
+    border: none;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+  
+.contact_form .contact_form_btn:hover{
+    text-decoration: none;
+    padding: 0.4rem 1.3rem;
+    background: #482611;
+    outline: 0.2rem solid #482611;
+    color: #f7bb00;
+    font-weight: bold;
+    outline-offset: 4px;
+    margin-top: 20px;
+    border: none;
+    display: inline-block;  
+}
+
+.contact_map{
+    width: 50%;
+    border: 1px solid #482611;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+}
+
+.gmap_iframe {
+    height: 100% !important;
+}
+
+@media (max-width: 950px) {
+    .contact-section{
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .contact_info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact_map{
+        margin-top: 60px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 90%;
+        margin: 0 auto;
+        height: 522px;
+    }
+    
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 100%;
+        height: 522px;
+    }
+}
+
+@media (max-width:500px) {
+    div [class^="col-"]{
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom: 50px;
+    }
+    .container{
+        margin-bottom: 50px;
+    }
+
+    .contact_text p{
+      font-size: 23px;
+      padding: 10px 10px;
+    }
+    #status{
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 950px) {
+    #status{
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+
+  @keyframes example {
+    0%   { opacity: 0; transform: translateX(-1000px);}
+    100% { opacity: 1; transform: translateX(0px);}
+  }
+
+  @keyframes imageAni {
+    0%   { opacity: 0; transform: translateX(2000px);}
+    100% {opacity: 1; transform: translateX(0px);}
+  }

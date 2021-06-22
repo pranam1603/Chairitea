@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contact_text">
+        <h1>Write to us today!</h1>
+        <p> Love our tea and products? Share your stories of joy and happiness with us! We love hearing our customer
+            stories. </p>
+    </div>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-block text-center">
+                    <h2 class="card-title text-center"><i class="material-icons card-title">Contact Us</i></h2>
+                    <a href="mailTo:jainpranam02@gmail.com"><img src="email.png"></a>
+                    <h5 class="card-title mt-3 mb-3">Email : XYZ@gmail.com<br />Contact : 1234567890
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-block text-center">
+                    <h2 class="card-title text-center"><i class="material-icons card-title">Address</i></h2>
+                    <a
+                        href="https://www.google.com/maps/search/203-204,+7,+Bapna+Arcade,+1,+Race+Course+Rd,+Zanjeerwal+Square,+New+Palasia,+Indore,+Madhya+Pradesh+452001/@22.726143,75.881579,18z?hl=en"><img
+                            src="pngegg.png" /></a>
+                    <h5 class="card-title mt-3 mb-3">Office No. 101, 1st Floor, Silver Point, 20/1, <br />Katraj -,
+                        Kondhwa, Pune - 411046</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-block text-center">
+                    <h4 class="card-title"><i class="material-icons card-title">Office Timing</i></h4>
+                    <img src="office-hours-icon-25.png">
+                    <h5 class="card-title mt-3 mb-3">Monday to Saturday<br />09.00 AM - 06.00 PM</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-section">
+        <div class="contact_info contact_form">
+            <form id="my-form" action="https://formspree.io/f/xjvjrllv" method="POST">
+                <input type="text" name="Name" placeholder="Name" required /><br>
+                <input type="email" name="Email" placeholder="Email" required /><br>
+                <input type="text" maxlength="10" name="Mobile No." placeholder="Mobile No." required /><br>
+                <textarea type="text" name="Message" placeholder="Message" required></textarea><br>
+                <button class="contact_form_btn">Send</button>
+            </form>
+            <div id="status"></div>
+        </div>
+        <div class="contact_info contact_map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=480&amp;height=522&amp;hl=en&amp;q=203-204, 7, Bapna Arcade, 1, Race Course Rd, Zanjeerwal Square, New Palasia, Indore, Madhya Pradesh 452001&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://www.fridaynightfunkin.net/">FNF PC</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
